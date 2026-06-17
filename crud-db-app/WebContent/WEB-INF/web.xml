@@ -1,27 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
-  <display-name>01-jsp-servlets-mvc-database-application</display-name>
-  <welcome-file-list>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+      http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+      version="2.5">
+
+```
+<display-name>Employee Management System</display-name>
+
+<welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
-  </welcome-file-list>
-  <servlet>
-    <description></description>
-    <display-name>EmployeeController</display-name>
+</welcome-file-list>
+
+<servlet>
     <servlet-name>EmployeeController</servlet-name>
-    <servlet-class>in.bushansirgur.controller.EmployeeController</servlet-class>
-  </servlet>
-  <servlet-mapping>
+    <servlet-class>com.sujalkamanna.controller.EmployeeController</servlet-class>
+</servlet>
+
+<servlet-mapping>
     <servlet-name>EmployeeController</servlet-name>
     <url-pattern>/EmployeeController</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>EmployeeController</display-name>
+</servlet-mapping>
+
+<servlet>
     <servlet-name>LoginController</servlet-name>
-    <servlet-class>in.bushansirgur.controller.LoginController</servlet-class>
-  </servlet>
-  <servlet-mapping>
+    <servlet-class>com.sujalkamanna.controller.LoginController</servlet-class>
+</servlet>
+
+<servlet-mapping>
     <servlet-name>LoginController</servlet-name>
     <url-pattern>/loginprocess</url-pattern>
-  </servlet-mapping>
+</servlet-mapping>
+```
+
 </web-app>
