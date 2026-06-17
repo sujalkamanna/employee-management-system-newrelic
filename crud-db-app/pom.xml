@@ -5,10 +5,14 @@
 
 <modelVersion>4.0.0</modelVersion>
 
-<groupId>com.sujal</groupId>
-<artifactId>employee-directory</artifactId>
-<version>1.0</version>
+<groupId>com.sujalkamanna</groupId>
+<artifactId>employee-management-system</artifactId>
+<version>1.0.0</version>
+
 <packaging>war</packaging>
+
+<name>Employee Management System</name>
+<description>Java Servlet JSP CRUD Application with MySQL, Docker, Apache Tomcat and New Relic Observability</description>
 
 <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
@@ -20,15 +24,15 @@
 
     <dependency>
         <groupId>javax.servlet</groupId>
-        <artifactId>servlet-api</artifactId>
-        <version>2.5</version>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>4.0.1</version>
         <scope>provided</scope>
     </dependency>
 
     <dependency>
         <groupId>javax.servlet.jsp</groupId>
-        <artifactId>jsp-api</artifactId>
-        <version>2.1</version>
+        <artifactId>javax.servlet.jsp-api</artifactId>
+        <version>2.3.3</version>
         <scope>provided</scope>
     </dependency>
 
@@ -43,6 +47,7 @@
         <artifactId>jstl</artifactId>
         <version>1.2</version>
     </dependency>
+
 </dependencies>
 
 <build>
@@ -60,9 +65,11 @@
                 <source>1.8</source>
                 <target>1.8</target>
             </configuration>
+
         </plugin>
 
         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-war-plugin</artifactId>
             <version>3.3.2</version>
 
