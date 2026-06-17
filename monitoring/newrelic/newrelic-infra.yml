@@ -1,7 +1,7 @@
 enable_process_metrics: true
 status_server_enabled: true
 status_server_port: 18003
-license_key: a26026648a7f13ac496ec1956c9f54498b44NRAL
+license_key: new-relic-icense-key
 custom_attributes:
-  nr_deployed_by: Java-CURD-App
+  nr_deployed_by: Java-CURD-App #new-relic-app-name
 
